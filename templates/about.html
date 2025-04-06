@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | PDF Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 2rem;
+    }
+    .about-container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    p {
+      margin: 0.6rem 0;
+      font-size: 16px;
+      color: #555;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>About PDF Chatbot</h1>
+    <p><strong>Project Summary:</strong> This AI-powered chatbot reads PDF documents and allows users to ask questions about the content. It retrieves the most relevant answers using semantic search with Sentence Transformers.</p>
+    <p><strong>Created By:</strong> Jagruti R. Zade</p>
+    <p><strong>Class:</strong> Final Year, M.Sc. Computer Software</p>
+    <p><strong>College:</strong> Shri Shivaji Science Collage, Amravati.</p>
+    <p><strong>University:</strong> Sant Gadge Baba Amravati University, Amravati.</p>
+
+    <a href="{{ url_for('home') }}">← Back to Home</a>
+  </div>
+</body>
+</html>
